@@ -55,6 +55,7 @@ jobs:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}  # Use your secret
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}  # Use your secret
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}  # Use your secret
+          allow-no-subscriptions: true
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
